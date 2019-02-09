@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix="t!")
 async def on_ready():
    print("Ready!")
 
-@bot.command
+@bot.command(pass_context=True)
 async def ping(ctx):
     await bot.say("Pong!")
 
