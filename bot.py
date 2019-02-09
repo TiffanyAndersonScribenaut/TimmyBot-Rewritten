@@ -14,4 +14,4 @@ async def on_ready():
 async def ping(ctx):
    await bot.say("Pong!")
 
-bot.run(os.getenv.TOKEN)
+bot.run(os.getenv('TOKEN'))
