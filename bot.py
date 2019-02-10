@@ -16,7 +16,7 @@ async def ping(ctx):
 
 @bot.command(pass_context=True)
 async def botinfo(ctx):
-    await bot.say("Sup. my name is TimmyBot. A bot created by `TimmyTimothyAnderson#3719")
-    await bot.say("Library: discord.py `Used to be made in discord.js")
+    await bot.say("Sup. my name is TimmyBot. A bot created by `TimmyTimothyAnderson#3719`")
+    await bot.say("Library: discord.py `Used to be made in discord.js`")
 
 bot.run(os.getenv('TOKEN'))
