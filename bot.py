@@ -20,4 +20,3 @@ async def botinfo(ctx):
     await bot.say("Library: discord.py `Used to be made in discord.js")
 
 bot.run(os.getenv('TOKEN'))
-s
