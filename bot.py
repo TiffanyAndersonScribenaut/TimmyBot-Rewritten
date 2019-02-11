@@ -16,7 +16,11 @@ async def ping(ctx):
 
 @bot.command(pass_context=True)
 async def botinfo(ctx):
-    await bot.say("Sup. my name is TimmyBot. A bot created by `TimmyTimothyAnderson#3719`")
-    await bot.say("Library: discord.py `Used to be made in discord.js`")
+    embed=discord.Embed(title="Info", description="Sup. My name is TimmyBot. ", color=0xebc000)
+embed.add_field(name=Name, value=TimmyBot, inline=False)
+embed.add_field(name=Bot Author, value=TimmyTimothyAnderson#3719, inline=False)
+embed.add_field(name=Library, value=discord.py (Python), inline=False)
+embed.set_footer(text="Use t!help to get a list of commands")
+await self.bot.say(embed=embed)
 
 bot.run(os.getenv('TOKEN'))
