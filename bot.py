@@ -21,6 +21,6 @@ async def botinfo(ctx):
     embed.add_field(name=Bot Author, value=TimmyTimothyAnderson#3719, inline=False)
     embed.add_field(name=Library, value=discord.py (Python), inline=False)
     embed.set_footer(text="Use t!help to get a list of commands")
-    await self.bot.say(embed=embed)
+    await bot.say(embed=embed)
 
 bot.run(os.getenv('TOKEN'))
