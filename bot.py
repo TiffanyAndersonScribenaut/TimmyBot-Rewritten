@@ -18,8 +18,8 @@ async def ping(ctx):
 async def botinfo(ctx):
     embed=discord.Embed(title="Info", description="Sup. My name is TimmyBot. ", color=0xebc000)
     embed.add_field(name=Name, value=TimmyBot, inline=False)
-    embed.add_field(name=Bot Author, value=TimmyTimothyAnderson#3719, inline=False)
-    embed.add_field(name=Library, value=discord.py (Python), inline=False)
+    embed.add_field(name="Bot Author", value="TimmyTimothyAnderson#3719", inline=False)
+    embed.add_field(name="Library", value="discord.py (Python)", inline=False)
     embed.set_footer(text="Use t!help to get a list of commands")
     await bot.say(embed=embed)
 
