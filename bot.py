@@ -15,7 +15,7 @@ async def ping(ctx):
     await bot.say("Pong!")
 
 @bot.command(pass_context=True)
-async def botinfo(ctx):
+async def botinfo(ctx, discord):
     embed=discord.Embed(title="Info", description="Sup. My name is TimmyBot. ", color=0xebc000)
     embed.add_field(name=Name, value=TimmyBot, inline=False)
     embed.add_field(name="Bot Author", value="TimmyTimothyAnderson#3719", inline=False)
