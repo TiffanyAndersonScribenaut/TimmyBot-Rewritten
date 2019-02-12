@@ -23,4 +23,8 @@ async def botinfo(ctx, discord):
     embed.set_footer(text="Use t!help to get a list of commands")
     await bot.say(embed=embed)
 
+@bot.command(pass_context=True)
+async def timmy(ctx):
+    await bot.say("https://cdn.discordapp.com/avatars/490270369865924638/b45370764d2dcf1d237f254c1789c1c3.png?size=1024")
+      
 bot.run(os.getenv('TOKEN'))
