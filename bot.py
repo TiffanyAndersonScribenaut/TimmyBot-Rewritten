@@ -26,5 +26,9 @@ async def botinfo(ctx, discord):
 @bot.command(pass_context=True)
 async def timmy(ctx):
     await bot.say("https://cdn.discordapp.com/avatars/490270369865924638/b45370764d2dcf1d237f254c1789c1c3.png?size=1024")
+
+@bot.command(pass_context=True)
+async def invite(ctx):
+    await bot.say("Invite me with this link: https://discordapp.com/api/oauth2/authorize?client_id=530988566050897949&permissions=8&scope=bot")
       
 bot.run(os.getenv('TOKEN'))
