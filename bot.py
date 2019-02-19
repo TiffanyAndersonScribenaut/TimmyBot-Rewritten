@@ -5,11 +5,21 @@ import asyncio
 import os
 
 bot = commands.Bot(command_prefix="t!")
+bot.remove_command('help')
 
 @bot.event
 async def on_ready():
    print("Ready!")
 
+@bot.command(pass_context=True)
+async def help(ctx):
+    await bot.say("Fun:")
+    await bot.say("t!timmy = Shows you a character made by the TimmyBot developer!")
+    await bot.say("Utilities:")
+    await bot.say("t!ping = Pong! But sorry. Bot latency will be added soon")
+    await bot.say("t!botinfo = Gets the bot's info But sorry. This command is broken. We will fix it soon")
+    await bot.say("t!invite = Invite the bot to your server!")
+   
 @bot.command(pass_context=True)
 async def ping(ctx):
     await bot.say("Pong!")
