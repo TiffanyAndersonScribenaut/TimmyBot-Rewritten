@@ -26,7 +26,7 @@ async def ping(ctx):
 
 @bot.command(pass_context=True)
 async def botinfo(ctx, discord):
-    embed=discord.Embed(title="Info", description="Sup. My name is TimmyBot. ", color=0xebc000)
+    embed=discord.Embed(title="Info", description="Sup. My name is TimmyBot. ", color=EBC000)
     embed.add_field(name=Name, value=TimmyBot, inline=False)
     embed.add_field(name="Bot Author", value="TimmyTimothyAnderson#3719", inline=False)
     embed.add_field(name="Library", value="discord.py (Python)", inline=False)
@@ -40,5 +40,5 @@ async def timmy(ctx):
 @bot.command(pass_context=True)
 async def invite(ctx):
     await bot.say("Invite me with this link: https://discordapp.com/api/oauth2/authorize?client_id=530988566050897949&permissions=8&scope=bot")
-      
+
 bot.run(os.getenv('TOKEN'))
